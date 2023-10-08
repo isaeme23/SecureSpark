@@ -1,13 +1,11 @@
 package org.example.loginserver;
 
-import org.eclipse.jetty.client.HttpConnection;
 import spark.Spark;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
 import java.net.URL;
 
 import static spark.Spark.*;

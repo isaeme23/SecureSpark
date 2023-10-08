@@ -31,6 +31,7 @@ public class SecureURLReader {
         SSLContext.setDefault(sslContext);
         // We can now read this URL
         readURL("https://localhost:35000/");
+        readURL("https://localhost:35001/hello");
         // This one can't be read because the Java default truststore has been
         // changed.
         //readURL("https://www.google.com");
