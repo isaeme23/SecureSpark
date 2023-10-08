@@ -1,4 +1,4 @@
-package org.example;
+package org.example.loginserver;
 
 import javax.net.ssl.SSLContext;
 import javax.net.ssl.TrustManagerFactory;
