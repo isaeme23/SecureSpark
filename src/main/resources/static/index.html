@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<h1>Login Form</h1>
+<form action="/login">
+    <label for="user">User:</label><br>
+    <input type="text" id="user" name="user" value="User here"><br><br>
+    <label for="passwd">Password:</label><br>
+    <input type="text" id="passwd" name="passwd" value="Password here"><br><br>
+    <input type="button" value="Login" onclick="loadGetMsg()">
+</form>
+<div id="getrespmsg"></div>
+
+<script>
+    function loadGetMsg() {
+        let nameVar = document.getElementById("name").value;
+        const xhttp = new XMLHttpRequest();
+        var data = {};
+        data.word = nameVar;
+        var json = JSON.stringify(nameVar);
+        xhttp.onload = function() {
+            document.getElementById("getrespmsg").innerHTML =
+            this.responseText;
+        }
+        xhttp.open("PUT", "/balance");
+        xhttp.send(json);
+    }
+</script>
+</body>
+</html>
