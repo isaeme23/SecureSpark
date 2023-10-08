@@ -18,17 +18,15 @@
 
 <script>
     function loadGetMsg() {
-        let nameVar = document.getElementById("name").value;
+        let userVar = document.getElementById("user").value;
+        let passwdVar = document.getElementById("passwd").value;
         const xhttp = new XMLHttpRequest();
-        var data = {};
-        data.word = nameVar;
-        var json = JSON.stringify(nameVar);
         xhttp.onload = function() {
             document.getElementById("getrespmsg").innerHTML =
             this.responseText;
         }
-        xhttp.open("PUT", "/balance");
-        xhttp.send(json);
+        xhttp.open("GET", "/login?user="+userVar+"&passwd="+passwdVar);
+        xhttp.send();
     }
 </script>
 </body>
