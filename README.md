@@ -75,9 +75,11 @@ la arquitectura.
 ## ¿Funciona en AWS?
 SI! Aqui el video:
 
+https://github.com/isaeme23/SecureSpark/assets/77862058/f270c490-2e11-4675-afb9-15a486967001
+
 
 ## Autores
-Isabella Manrique 
+Isabella Manrique :)
 
 ## Agradecimientos
 Profe Profe Luis Daniel Benavides Navarro
