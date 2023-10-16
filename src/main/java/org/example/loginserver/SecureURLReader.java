@@ -3,13 +3,9 @@ package org.example.loginserver;
 import javax.net.ssl.SSLContext;
 import javax.net.ssl.TrustManagerFactory;
 import java.io.*;
-import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLConnection;
 import java.security.KeyStore;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
 
 public class SecureURLReader {
 
@@ -45,17 +41,12 @@ public class SecureURLReader {
         //urlConnection.("GET");
         urlConnection.setRequestProperty("User-Agent", "Mozilla/5.0");
         StringBuffer response = new StringBuffer();
-//        int responseCode = urlConnection.getResponseCode();
-//        if (responseCode == HttpURLConnection.HTTP_OK){
             BufferedReader in = new BufferedReader(new InputStreamReader(urlConnection.getInputStream()));
             String inputLine;
             while ((inputLine = in.readLine()) != null) {
                 response.append(inputLine);
             }
             in.close();
-//        } else{
-//            System.out.println("GET connection not established");
-//        }
         return response.toString();
     }
 
