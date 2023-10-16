@@ -74,4 +74,10 @@ la arquitectura.
 
 ## ¿Funciona en AWS?
 SI! Aqui el video:
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/3kb_ekMIANw?si=4eGkIqqAXftjV5-k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+## Autores
+Isabella Manrique 
+
+## Agradecimientos
+Profe Profe Luis Daniel Benavides Navarro
