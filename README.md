@@ -10,7 +10,7 @@ Construir una aplicación web segura usando certificados digitales.
 - IDE de tu elección
 
 ## ¿Cómo usar este laboratorio?
-Primero, debes descargar el contenido de este repositorio y el repositiorio SecureOtherSpark:
+Primero, debes descargar el contenido de este repositorio y el repositiorio [SecureOtherSpark](https://github.com/isaeme23/SecureOtherSpark):
     
     git clone https://github.com/isaeme23/SecureSpark.git
     git clone https://github.com/isaeme23/SecureOtherSpark.git
@@ -21,8 +21,16 @@ Después para compilar el contenido, usaremos la siguiente línea en ambos proye
 
 Y después podremos ejecutar los siguientes comandos en cada proyecto respectivo:
     
+**Mac:**
+
     java -cp "target/classes:target/dependency/*" org.example.loginserver.SecureSpark
     java -cp "target/classes:target/dependency/*" org.example.otherserver.SecureOtherSpark
+
+
+**Windows:**
+
+    java -cp "target/classes;target/dependency/*" org.example.loginserver.SecureSpark
+    java -cp "target/classes;target/dependency/*" org.example.otherserver.SecureOtherSpark
 
 Ahora, si vamos a nuestro navegador y colocamos en la barra de busqueda https://localhost:35000 se podrá
 ver el contenido del login.
@@ -33,12 +41,11 @@ ver el contenido del login.
 
 Cuando un usuario si está registrado, tenemos el siguiente mensaje de exito:
 
-![Captura de Pantalla 2023-10-15 a la(s) 8.59.29 p.m..png](img%2FCaptura de Pantalla 2023-10-15 a la(s) 8.59.29 p.m.png)
+![img3.png](img%2Fimg3.png)
 
 En caso contrario, tenemos un caso en el que se le muestra un mensaje de login fallido:
 
 ![img2.png](img%2Fimg2.png)
-
 
 ## ¿Cómo se logró que funcionara?
 Primero, para ambos generamos un keystore
@@ -77,9 +84,8 @@ SI! Aqui el video:
 
 https://github.com/isaeme23/SecureSpark/assets/77862058/f270c490-2e11-4675-afb9-15a486967001
 
-
 ## Autores
-Isabella Manrique :)
+Isabella Manrique :octocat:
 
 ## Agradecimientos
 Profe Profe Luis Daniel Benavides Navarro
