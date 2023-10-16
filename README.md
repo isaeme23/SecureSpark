@@ -33,7 +33,7 @@ ver el contenido del login.
 
 Cuando un usuario si está registrado, tenemos el siguiente mensaje de exito:
 
-![IMG3.png](img%2FIMG3.png)
+![Captura de Pantalla 2023-10-15 a la(s) 8.59.29 p.m..png](img%2FCaptura de Pantalla 2023-10-15 a la(s) 8.59.29 p.m.png)
 
 En caso contrario, tenemos un caso en el que se le muestra un mensaje de login fallido:
 
