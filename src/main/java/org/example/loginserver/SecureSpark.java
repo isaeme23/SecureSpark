@@ -3,6 +3,7 @@ package org.example.loginserver;
 import spark.Spark;
 import static org.example.loginserver.SecureURLReader.verification;
 import static spark.Spark.*;
+import static org.example.loginserver.PasswdHash.generateHash;
 
 
 /**
@@ -48,7 +49,8 @@ public class SecureSpark {
      */
 
     public static String checkUsers(String user, String passwd) throws Exception {
-        if (user.equals("Isa") && passwd.equals("1234")){
+        String hash = generateHash(passwd);
+        if (user.equals("Isa") && hash.equals(generateHash("1234"))){
             return showLogin();
         } else{
             return "Not correct";
@@ -62,6 +64,6 @@ public class SecureSpark {
      */
 
     public static String showLogin() throws Exception {
-        return verification("https://ec2-54-87-169-94.compute-1.amazonaws.com:35001/hello");
+        return verification("https://localhost:35001/hello");
     }
 }
